@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar's Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(25, 25, 70);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 107, 228);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+        }
+
+        .secondsection {
+            display: flex;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .leftsection1 {
+            font-size: 1.5rem;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+        }
+
+        .leftsection .buttons {
+            padding: 20px 0;
+        }
+
+        .rightsection1 img {
+            width: 50%;
+            float: right;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        main hr {
+            border: o;
+            background: #9c97f1;
+            height: 1px;
+            margin: 20px 85px;
+        }
+
+        .menu {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sks {
+            /* border: 2px solid black; */
+            background-color: rgba(0, 0, 0, 0.9) !important;
+            min-height: 130px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            transition: transform 0.4s ease;
+        }
+
+        .sks:hover {
+            transform: scale(1.09);
+            cursor: pointer;
+        }
+
+        .sks h3 {
+            color: white;
+        }
+
+        .skills {
+            background: rgb(0, 0, 33);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        .sks img {
+            /* border: 2px solid black; */
+            height: 55px;
+            width: 55px;
+            margin-bottom: 10px;
+        }
+
+        .abilities {
+            background-color: rgb(25, 25, 70);
+            width: 75%;
+            padding: 40px;
+            place-items: center;
+
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            border-radius: 20px;
+        }
+
+
+        .school {
+            padding: 10px;
+        }
+
+        .engi {
+            text-align: start;
+            padding: 30px;
+            margin: 10px;
+            background-color: rgb(25, 25, 70);
+            border-radius: 8px;
+            transition: transform 0.4s ease;
+        }
+
+        .engi:hover {
+            transform: scale(1.06);
+            cursor: pointer;
+        }
+
+
+        .school {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+
+        }
+
+        .education h1 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 2.4rem;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        .education span {
+            color: #f9f7f7;
+        }
+
+        #exp h1 {
+            font-size: 2.6rem;
+        }
+
+        .exper {
+            background-color: rgb(25, 25, 70);
+            color: white;
+            width: 47%;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            transition: transform 0.4s ease;
+        }
+
+        .exper:hover {
+            transform: scale(1.06);
+            cursor: pointer;
+        }
+
+        .exper h3 {
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            font-size: 1.8rem;
+            font-weight: 750;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .exper h4 {
+            font-size: 1.3rem;
+        }
+
+        .exper p {
+            font-size: 0.9rem;
+        }
+
+        .experience i {
+            font-size: 2rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 70px;
+            gap: 20px;
+        }
+
+        .projects_div1 {
+            width: 40vw;
+            box-shadow: 0px 5px 10px rgba(7, 7, 7, 0.9);
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        div.layer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            gap: 20px;
+            text-align: center;
+            background-color: rgb(252, 252, 252);
+            border-radius: 10px;
+            padding: 30px;
+            transform: translateY(100%);
+            transition: all 0.3s linear;
+
+        }
+
+        .layer h4 {
+            color: blue;
+            font-size: 1.67rem;
+            font-weight: 750;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .layer p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .projects_div1:hover>.layer {
+            transform: translateY(30px);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .butns a {
+            height: 50px;
+            background-color: #fff;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 64px;
+            text-align: center;
+            margin: 0 19px;
+
+        }
+
+        .butns a i {
+            margin: 0 auto;
+        }
+
+        .projects_div1 img {
+            width: 100%;
+        }
+
+
+        .projectss i {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        .hello-box {
+            margin-top: 60px;
+            flex-basis: 40%;
+        }
+
+        .hello-box h1 {
+            color: rgb(212, 10, 138);
+        }
+
+        .home-sm .pcolor {
+            color: rgb(212, 10, 138);
+        }
+
+        .form-box {
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .form {
+            width: 100%;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid rgb(212, 10, 138);
+            border-radius: 4px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        button {
+            background-color: rgb(212, 10, 138);
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
+
+        button:hover {
+            background-color: #ccc;
+            font-weight: 800;
+            color: red;
+        }
+
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .footer-container p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tushar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Tushar</span>
+                <div>and I am a passionate</div>
+                <span id="element" class="purple"></span>
+                <div class="buttons">
+                    <button class="btn" style="
+                        background: #00003f;
+                        color:white;
+                        border: 2px solid white;
+                        border-radius: 6px;
+                        font-size: 20px;
+                        "><a href="images\Tushar_More_BE_Comp.pdf">Download Resume</a></button>
+                    <button class="btn" style="
+                    background: #00003f;
+                    color:white;
+                    border: 2px solid white;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    "><a href="https://github.com/tusharmore26">Visit Github</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="images/bg.png" alt="loading image">
+            </div>
+        </section>
+
+
+        <hr>
+
+
+        <h1 class="menu" id="about_me">About Me</h1> <br><br>
+        <section class="secondsection">
+            <div class="leftsection1">
+                <h2>I'm Tushar More</h2>
+                <h5>A Passionate Fullstack Developer and Coding enthusiast <br>
+                    with exprience in building scalable websites and applications</h5><br>
+                <h3>Personal Info</h3>
+                Name : More Tushar Dhairyshil <br>
+                DOB : 26/07/2002 <br>
+                Gmail : tusharmore938@gmail.com <br>
+                Address : Pune (411014) , Maharastra, India
+            </div>
+            <div class="rightsection1">
+                <img src="images\tushar_img.jpg" alt="loading image">
+            </div>
+        </section>
+        <br>
+
+        <hr>
+
+        <h1 class="menu" id="education">Education</h1>
+        <div class="education">
+            <div class="school">
+                <div class="engi">
+                    <h2>Bachelor in Computer Engineering</h2>
+                    <h4>Parvatibai Genba College Of Engineering Wagholi, Pune</h4>
+                    <h5 class="perc">2021-2024 | Pursuing</h5>
+                    <h3><span class="perc">CGPA:</span> 8.5 </h3>
+                </div>
+                <div class="engi">
+                    <h2>Diploma in Computer Engineering</h2>
+                    <h4>AISSMS's Polytechnic, Pune</h4>
+                    <h5 class="perc">2018-2021 | Completed</h5>
+                    <h3><span class="perc">Percentage:</span> 90.80% </h3>
+                </div>
+                <!-- if you add it , i havent gave it heigh(you should five min-heigh) itw will automatically adjust heigh if i add it , that why dont give fixed size -->
+                <div class="engi">
+                    <h2>10th</h2>
+                    <h4>Jawahar Vidhyalaya, Andur</h4>
+                    <h5 class="perc">2017-2018 | Completed</h5>
+                    <h3><span class="perc">Percentage:</span> 85.80%</h3>
+                </div>
+                <!-- we didnt give heigh to schol , so we can dynamicaaly add elements and its size get dinamiccally adjusted acc to tht content -->
+            </div>
+        </div>
+        <hr>
+
+        <h1 class="menu" id="experience">Experience</h1>
+        <br><br>
+
+        <div class="exper">
+            <h3>Python Developer Intern</h3>
+            <h4>Om Software PVT LTD</h4>
+            <p>March 2023 - May 2023 </p>
+            <p>• Developed and maintained a dynamic web application using Python</p>
+            <p>• Implemented data scraping techniques to extract relevant information from various websites,
+                enhancing the application's data collection capabilities</p>
+        </div>
+
+        <br>
+
+        <hr>
+
+        <h1 class="menu" id="skills">Skills</h1>
+
+        <div class="skills" id="skills">
+
+            <div class="abilities">
+                <div class="sks">
+                    <img src="images/html.svg" alt="">
+                    <h3>HTML</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/css.webp" alt="">
+                    <h3>CSS</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/js.webp" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/bootstrap.svg" alt="">
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/git.webp" alt="">
+                    <h3>Git/Github</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/cpp.webp" alt="">
+                    <h3>c++</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/dsa.webp" alt="">
+                    <h3>DSA</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/sql.png" alt="">
+                    <h3>SQL</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/python.webp" alt="">
+                    <h3>Python</h3>
+                </div>
+                <div class="sks">
+                    <img src="images/java.png" alt="">
+                    <h3>Java</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <hr>
+
+        <h1 class="menu" id="projects">Projects</h1>
+
+
+        <div class="projectss" id="projects">
+
+            <div class="projects">
+                <div class="projects_div1">
+                    <img src="images\portFolio.png" alt="">
+                    <div class="layer">
+                        <h4>Personal Portfolio</h4>
+                        <p>"Welcome to my portfolio! Explore my journey, projects, and skills as a passionate web
+                            developer"</p>
+                        <div class="butns">
+                            <a href="https://omhpatil.github.io/Portfolio-Website/"><img src="images/git.webp"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects_div1">
+                    <img src="images\gitFinder.png" alt="">
+                    <div class="layer">
+                        <h4>gitFinder</h4>
+                        <p>Developed a Web Application for finding Github
+                            user"</p>
+                        <div class="butns">
+                            <a href="https://git-finder-liard.vercel.app/"><img src="images/git.webp"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h1 class="menu" id="contact">Contact</h1>
+
+            <footer id="contact">
+                <div class="footer-container">
+                    <div class="hello-box">
+                        <h1>Hello Folks,</h1>
+                        <p>
+                            Thanks for visiting my website, if you have any questions or just want to say hello, feel
+                            free to reach out to me.
+                        </p>
+
+
+                        <div class="home-sm">
+                            <p class="pcolor">Connect with me on:</p>
+                            <a href="https://github.com/tusharmore26"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/tushar-more-0b298524a/"><i
+                                    class='bx bxl-linkedin-square'></i></i></a>
+                            <a href="https://www.instagram.com/tushar._here/"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://wa.me/9022615006"><i class="bx bxl-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="form-box">
+                        <div class="form">
+                            <form id="contactForm" action="https://formspree.io/f/xqkrkbbz" method="POST">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Message"
+                                    required></textarea>
+
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="footer-container">
+                    <p>Copyright &copy 2024 | All Rights Reserved</p>
+                    <p>Desinged by Tushar More</p>
+                </div>
+
+            </footer>
+
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--For Animation we use this type js code (javascript animation library)-->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Fullstack Developer', 'Problem Solver', 'Programmer'],
+            typeSpeed: 70,
+        });
+    </script>
+
+</body>
+
+</html>
